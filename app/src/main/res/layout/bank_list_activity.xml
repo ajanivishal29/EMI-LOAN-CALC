@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txt_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="7dp"
+        android:background="@color/toolbar_color"
+        android:elevation="7dp"
+        android:padding="7dp"
+        android:text="Note : Before calling,you must be register your indian mobile number with your bankModelclass.In responce of your miss call your bankModelclass will send you sms with your current bankModelclass balance on your registered mobile number only."
+        android:textColor="@color/text_color"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/bank_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txt_note"
+        android:layout_above="@id/small_native"
+        android:layout_marginTop="3dp" />
+
+    <RelativeLayout
+        android:id="@+id/small_native"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" />
+</RelativeLayout>

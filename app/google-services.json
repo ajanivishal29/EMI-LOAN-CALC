@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "710758322967",
+    "project_id": "loanmint-calculator",
+    "storage_bucket": "loanmint-calculator.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:710758322967:android:3542f9baa928677f891d52",
+        "android_client_info": {
+          "package_name": "com.financecalculator.emicalcutator.meghachem"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD12qvyxzvnMmx7LnGodqz5KsQj-P-IGv4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

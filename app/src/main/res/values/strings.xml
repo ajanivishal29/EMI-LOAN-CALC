@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Emi Loan Calculator</string>
+
+    <string name="txtinter">Need Internet</string>
+    <string name="txtinternet">Internet is necessary for load all functionality…</string>
+
+    <string name="choose_your_country">Choose Your Country</string>
+    <string name="choose_your_currency">Choose Your Currency</string>
+    <string name="choose_your_language">Choose Your Language</string>
+
+    <string name="play">Play</string>
+    <string name="play_amp_win_coins">Play Quiz &amp; Earn Money</string>
+    <string name="play_now">Play Now</string>
+    <string name="win_5_00_000_coins">Win 5,00,000 Coins...</string>
+
+</resources>

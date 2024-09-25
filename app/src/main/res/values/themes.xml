@@ -1,0 +1,39 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Loanmint" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor">#215A8F</item>
+    </style>
+
+    <style name="Theme.Loanmint" parent="Base.Theme.Loanmint" />
+
+
+    <style name="FullWidth_Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <style name="TextToolBar">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:lines">1</item>
+        <item name="maxLines">1</item>
+    </style>
+
+    <style name="TextButton">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:lines">1</item>
+        <item name="maxLines">1</item>
+    </style>
+
+    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/progress_loader</item>
+        <item name="android:textColor">@color/progress_text</item>
+        <item name="android:background">@color/progress_bg</item>
+    </style>
+</resources>

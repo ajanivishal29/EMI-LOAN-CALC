@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/topLay"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/bank_view_title"
+            style="@style/TextToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@+id/ic_back"
+            android:text="Currency Converter" />
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_centerVertical="true"
+            android:padding="18dp"
+            android:src="@drawable/and_back" />
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/native_ad_container"
+        android:layout_below="@id/topLay"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:text="Convert From"
+                android:textColor="@color/txtcolor"
+                android:textSize="@dimen/_15sdp" />
+
+            <TextView
+                android:id="@+id/first_countryPicker"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/editbg_bg"
+                android:elevation="5dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Indian Rupee"
+                android:textColor="@color/txtcolor"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Convert To"
+                android:textColor="@color/txtcolor"
+                android:textSize="@dimen/_15sdp" />
+
+            <TextView
+                android:id="@+id/second_countryPicker"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/editbg_bg"
+                android:elevation="5dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="US Dollar"
+                android:textColor="@color/txtcolor"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Enter amount : "
+                android:textColor="@color/txtcolor"
+                android:textSize="@dimen/_15sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editbg_bg"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_first_currency"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/bg"
+                    android:hint="Ex : 5"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="0dp"
+                    android:textColor="@color/txtcolor"
+                    android:textSize="@dimen/_15sdp" />
+
+                <TextView
+                    android:id="@+id/txt_first_currency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.6"
+                    android:paddingHorizontal="@dimen/_5sdp"
+                    android:text="(USD)"
+                    android:textColor="@color/txtcolor" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/btnConvert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/ads_bg"
+                android:backgroundTint="@color/appcolor"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:paddingVertical="@dimen/_20sdp"
+                android:text="Convert"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/editbg_bg"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_10sdp">
+
+                <ProgressBar
+                    android:id="@+id/prgLoading"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:indeterminateTint="@color/color1"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Converted amount"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/txt_second_currency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.6"
+                        android:paddingHorizontal="@dimen/_5sdp"
+                        android:text="(INR)"
+                        android:textColor="@color/txtcolor" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginHorizontal="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/dotview"
+                        android:backgroundTint="@color/black" />
+
+                    <TextView
+                        android:id="@+id/et_second_currency"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15sdp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/native_ad_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="3dp"
+        android:orientation="vertical" />
+</RelativeLayout>

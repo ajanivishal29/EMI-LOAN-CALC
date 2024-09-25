@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="test_color">#000</color>
+    <color name="text_color">@color/white</color>
+    <color name="toolbar_color">@color/appcolor</color>
+    <color name="colorAccent">#00bfa5</color>
+    <color name="colorPrimary">#245787</color>
+    <color name="colorPrimaryDark">#245787</color>
+    <color name="blackHint">#4d000000</color>
+    <color name="dark_blue">#245787</color>
+    <color name="gray">#a9a9a9</color>
+    <color name="fontWhiteEnable">#ffffffff</color>
+    <color name="vv">#1e1e1e</color>
+    <color name="color_result_bg">#1e1e1e</color>
+    <color name="calculatecolor">#f6ecc9</color>
+    <color name="color1">#fd81fb</color>
+    <color name="color2">#8a97ff</color>
+    <color name="color3">#298435</color>
+    <color name="color4">#f06634</color>
+    <color name="color5">#ffb800</color>
+    <color name="txtcolor">#131313</color>
+    <color name="bg">#f7f7ef</color>
+    <color name="green">#7cb342</color>
+
+    <color name="appcolor">#0096FF</color>
+
+    <color name="adbtncolor">#2D3959</color>
+    <color name="ad_btn_textcolor">@color/white</color>
+    <color name="ad_bg_maincolor">@color/white</color>
+    <color name="ad_bg_fbcolor">#80DFDFDF</color>
+    <color name="ad_txtcolor">@color/black</color>
+
+    <color name="progress_bg">@color/dark_blue</color>
+    <color name="progress_text">@color/white</color>
+    <color name="progress_loader">@color/white</color>
+
+</resources>
